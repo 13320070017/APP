@@ -99,6 +99,8 @@
             }
         }
     };
+
+    //获取元素个数
     u.domAll = function(el, selector){
         if(arguments.length === 1 && typeof arguments[0] == 'string'){
             if(document.querySelectorAll){
@@ -110,6 +112,8 @@
             }
         }
     };
+
+    //获取id
     u.byId = function(id){
         return document.getElementById(id);
     };
@@ -389,6 +393,8 @@
             return el;
         }
     };
+
+    //获取模块宽高
     u.offset = function(el){
         if(!u.isElement(el)){
             console.warn('$api.offset Function need el param, el param must be DOM Element');
@@ -493,6 +499,8 @@
             }
         }
     };
+
+    //获取状态栏高度
     u.fixStatusBar = function(el){
         if(!u.isElement(el)){
             console.warn('$api.fixStatusBar Function need el param, el param must be DOM Element');
